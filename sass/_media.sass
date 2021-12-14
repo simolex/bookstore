@@ -4,24 +4,91 @@
    .hero
       margin-top: 59px
    .book
-      &__cover
-         float: 48%
+      &__info
+         flex-basis:  50%
+      &__cover      
+         flex-basis:  48%  
          max-width: 420px
          padding: 52px 69px
       &__author
-         margin-top: 23px
-         margin-bottom: 30px
-      &__description
-         //margin-bottom: 4px
+         margin-top: 30px
+         margin-bottom: 35px
+
 @media ( max-width: 992px )
    .container
-      max-width: 700px
+      max-width: 740px
    .book
+      &__info
+         flex-basis:  48%
+      &__cover
+         padding: 39px 61px
+         flex-basis:  48%
+         height: 440px
       &__title
          font-size: 38px
       &__author
          font-size: 16px
       &__description
          font-size: 14px
+      &__order
+         min-height: 50px
+         font-size: 16px
+         &--demo
+            font-size: 17px
+@media ( max-width: 768px )
+   .container
+      max-width: 576px
+      width: 90%
+   .navbar
+      margin-top: 0
+      padding: 18px 0
+      &__menu
+         &-group
+            &--hidden
+               display: none
+         &-burger
+            &--activate
+            display: block      
+   .hero
+      margin-top: 36px
+   .book
+      flex-direction: column
+      &__info
+         flex-basis: auto
+         min-height: auto
       &__cover
-         height: 478px
+         padding: 59px 69px
+         height: auto
+         flex-basis: auto
+      &__title
+         font-size: 32px
+         text-align: center
+      &__author
+         margin-top: 24px
+         margin-bottom: 32px
+         text-align: center
+      &__description
+         font-size: 16px
+         text-align: center
+         margin-bottom: 17px
+      &__order
+         min-height: 40px
+         max-width: 176px
+         &--demo
+            max-width: 176px
+         &-group
+            justify-content: center
+            margin-bottom: 36px
+
+@media ( max-width: 576px )
+   .container
+      min-width: 280px
+@media ( max-width: 420px  )
+   .book
+      &__order
+         &-group
+            flex-direction: column
+         &--demo
+            margin-left: 0
+            margin-top: 15px
+   
