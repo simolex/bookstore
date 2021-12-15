@@ -1,1 +1,76 @@
 .stories
+   &-wrapper
+      padding: 102px 62px 100px 72px
+      display: flex
+      flex-direction: column
+   &__title
+      flex-basis: 58%
+      flex-grow: 1
+      font-size: 48px
+      line-height: 60px
+      &-group
+         display: flex
+         align-items: start
+         margin-bottom: 21px
+   &__description
+      margin: 0
+      flex-basis: 41%
+      flex-grow: 1
+      font-weight: 400
+      font-size: 18px
+      line-height: 32px
+   &__image
+      width: 100%
+      min-height: 100%
+      object-fit: cover
+   &__main
+      &-video
+         flex-basis: 100%
+         max-height: 380px
+         width: 100%
+         margin-bottom: 30px
+   &__other
+      &-group
+         display: flex
+         margin: -15px
+      &-story
+         margin: 15px
+
+.story
+   width: calc( 33.33% - 30px )
+   max-height: 280px
+   &__image
+      width: 100%
+      max-height: 200px
+      height: 100%
+      object-fit: cover
+   &__info
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      align-items: center
+      height: 100%
+      max-height: 85px
+      justify-content: space-between
+      align-content: end
+   &__title
+      //flex-basis: 90%
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 145%
+      letter-spacing: 0.2px
+   &__remark
+      order: 3
+      flex-basis: 100%
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+      display: block
+      margin-top: 10px
+   &__flag
+      align-content: center
+      &-icon
+         width: 14px
+         height: 21px
