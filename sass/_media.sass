@@ -16,8 +16,18 @@
       &__wrapper
          flex-direction: column
       &__excite
-         margin-right: 0   
+         margin-right: 0
+         width: calc( 100% - 32px )   
+      &__top
+         &-book
+            width: calc( 100% - 36px ) 
+            
+         &-card
+            &:nth-child(n+4)
+               display: none
       &__card
+         flex-direction: column 
+         width: calc( 33% - 32px )
          &:nth-child(n+4)
             display: none
    .excite
@@ -25,8 +35,46 @@
          text-align: center
       &__wrapper
          justify-content: space-between
-         
-   .card         
+   .card
+      max-height: 312px
+      height: 312px
+      position: relative
+      
+      padding: 132px 0 32px
+      &__cover
+         position: absolute
+         top: -24px
+         flex-basis: auto
+         min-width: 96px
+         width: 96px
+         height: 147px
+      &__info
+         flex-basis: auto
+         height: 100%
+      &__break
+         display: none
+      &__title
+         text-align: center
+      &__category
+         text-align: center
+         &--pp
+            margin-top: 0
+      &__price
+         text-align: center
+      &__order
+         min-width: 153px
+         align-self: center
+   .top
+      &-book
+         &__wrapper
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+         &__button
+            width: 100%
+      &-card
+         width: calc( 33% - 36px )
+
 
 @media ( max-width: 992px )
    .container
