@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ehya - Bookstore</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -286,56 +290,73 @@
     </section>
     <!-- /.feature -->
     <section class="categories">
-      <div class="container categories__line">
-        <div class="categories-wrapper">
-          <div class="category">
-            <div class="category__content">
-              <img
-                src="img/category/category-1.svg"
-                alt="Icon: Бизнес & Финансы"
-                class="category__image"
-              />
-              <h2 class="category__title">Бизнес & Финансы</h2>
-              <span class="category__comment">Книги про мир бизнеса</span>
+      <div class="container">
+        <div class="swiper categories__line">
+          <div class="categories-wrapper">
+            <div class="category">
+              <div class="category__content">
+                <img
+                  src="img/category/category-1.svg"
+                  alt="Icon: Бизнес & Финансы"
+                  class="category__image"
+                />
+                <h2 class="category__title">Бизнес & Финансы</h2>
+                <span class="category__comment">Книги про мир бизнеса</span>
+              </div>
             </div>
-          </div>
-          <!-- /.category -->
-          <div class="category">
-            <div class="category__content">
-              <img
-                src="img/category/category-2.svg"
-                alt="Icon: Самомотиватия"
-                class="category__image"
-              />
-              <h2 class="category__title">Самомотиватия</h2>
-              <span class="category__comment">Книги о мотивации</span>
+            <!-- /.category -->
+            <div class="category">
+              <div class="category__content">
+                <img
+                  src="img/category/category-2.svg"
+                  alt="Icon: Самомотиватия"
+                  class="category__image"
+                />
+                <h2 class="category__title">Самомотиватия</h2>
+                <span class="category__comment">Книги о мотивации</span>
+              </div>
             </div>
-          </div>
-          <!-- /.category -->
-          <div class="category">
-            <div class="category__content">
-              <img
-                src="img/category/category-3.svg"
-                alt="Icon: Романы Теленовеллы"
-                class="category__image"
-              />
-              <h2 class="category__title">Романы Теленовеллы</h2>
-              <span class="category__comment">Книги с крутыми историями</span>
+            <!-- /.category -->
+            <div class="category">
+              <div class="category__content">
+                <img
+                  src="img/category/category-3.svg"
+                  alt="Icon: Романы Теленовеллы"
+                  class="category__image"
+                />
+                <h2 class="category__title">Романы Теленовеллы</h2>
+                <span class="category__comment">Книги с крутыми историями</span>
+              </div>
             </div>
-          </div>
-          <!-- /.category -->
-          <div class="category">
-            <div class="category__content">
-              <img
-                src="img/category/category-4.svg"
-                alt="Icon: Самомотиватия"
-                class="category__image"
-              />
-              <h2 class="category__title">Навыки будущего</h2>
-              <span class="category__comment">Книги для самоподготовки</span>
+            <!-- /.category -->
+            <div class="category">
+              <div class="category__content">
+                <img
+                  src="img/category/category-4.svg"
+                  alt="Icon: Самомотиватия"
+                  class="category__image"
+                />
+                <h2 class="category__title">Навыки будущего</h2>
+                <span class="category__comment">Книги для самоподготовки</span>
+              </div>
             </div>
+            <!-- /.category -->
+            <div class="category">
+              <div class="category__content">
+                <img
+                  src="img/category/category-2.svg"
+                  alt="Icon: Самомотиватия"
+                  class="category__image"
+                />
+                <h2 class="category__title">Самомотиватия</h2>
+                <span class="category__comment">Книги о мотивации</span>
+              </div>
+            </div>
+            <!-- /.category -->
           </div>
-          <!-- /.category -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev">&lt;</div>
+          <div class="swiper-button-next">&gt;</div>
         </div>
       </div>
     </section>

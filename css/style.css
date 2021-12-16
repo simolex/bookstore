@@ -909,7 +909,7 @@ body {
 }
 
 .categories {
-  margin-top: 79px;
+  margin-top: 76px;
   padding-bottom: 98px;
 }
 
@@ -922,13 +922,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: -14px;
 }
 
 .category {
-  margin: 14px;
-  min-width: calc( 25% - 28px);
-  height: 240px;
+  width: 265px;
+  min-width: 265px;
+  min-height: 240px;
+  max-height: 240px;
   padding: 40px 10px 30px;
   border: 1px solid #ECEEF2;
   border-radius: 8px;
