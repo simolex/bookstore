@@ -1231,10 +1231,6 @@ body {
   margin-bottom: 52px;
 }
 
-.category {
-  display: none;
-}
-
 .unreleased {
   display: none;
 }
@@ -1275,9 +1271,6 @@ body {
   }
   .feature__top-book {
     width: calc( 100% - 36px);
-  }
-  .feature__top-card:nth-child(n+4) {
-    display: none;
   }
   .feature__card {
     -webkit-box-orient: vertical;
@@ -1353,6 +1346,9 @@ body {
   .top-book__button {
     width: 100%;
   }
+  .top-book__title {
+    text-align: center;
+  }
   .top-card {
     width: calc( 33% - 36px);
   }
@@ -1360,7 +1356,7 @@ body {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 740px;
+    max-width: 700px;
   }
   .book {
     -webkit-box-orient: vertical;
@@ -1398,9 +1394,18 @@ body {
             justify-content: center;
     margin-bottom: 36px;
   }
+  .feature__card {
+    width: calc( 50% - 32px);
+  }
+  .feature__card:nth-child(n+3) {
+    display: none;
+  }
+  .top-card {
+    width: calc( 50% - 36px);
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 90%;
@@ -1420,7 +1425,7 @@ body {
   .navbar__menu-group--hidden {
     display: none;
   }
-  .navbar__menu-burger {
+  .navbar__menu-burger--activate {
     display: block;
   }
   .hero {
@@ -1429,11 +1434,44 @@ body {
   .book__info {
     width: 90%;
   }
+  .feature__card {
+    width: calc( 100% - 32px);
+  }
+  .feature__card:nth-child(n+2) {
+    display: none;
+  }
+  .feature__top-book {
+    padding-top: 26px;
+  }
+  .feature__top-card {
+    margin-bottom: 13px;
+  }
+  .top-card {
+    width: calc( 100% - 36px);
+  }
+  .top-card__cover {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .top-card__info {
+    -ms-flex-preferred-size: 62%;
+        flex-basis: 62%;
+  }
+  .top-book__title {
+    margin-bottom: 36px;
+  }
+  .top-book__wrapper {
+    margin: 0px -12px;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     min-width: 280px;
+  }
+  .excite__title {
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
@@ -1462,11 +1500,71 @@ body {
   .book__cover {
     max-width: 280px;
     min-height: 333px;
+    height: 100%;
     width: 90%;
   }
   .book__image {
     width: 143px;
     max-height: 215px;
+  }
+  .feature {
+    padding-top: 56px;
+  }
+  .card__cover {
+    height: 137px;
+  }
+  .card__info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: -10px;
+  }
+  .card__category {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .card__price {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: -10px;
+  }
+  .card__button {
+    max-width: 114px;
+  }
+  .card__like {
+    margin-right: 0;
+  }
+  .top-card__title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .top-card__cover {
+    width: 96px;
+    min-width: 96px;
+    max-height: 145px;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .top-book__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .top-book__button {
+    margin-top: 18px;
+  }
+  .excite__button {
+    margin: 8px 14px 14px;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 48px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,8 +7,8 @@
       &__break
          display: none
       &__info
-         padding: 0   
-      &__cover      
+         padding: 0
+      &__cover
          //flex-basis:  48%  
          max-width: 420px
          //padding: 52px 69px
@@ -17,16 +17,12 @@
          flex-direction: column
       &__excite
          margin-right: 0
-         width: calc( 100% - 32px )   
+         width: calc( 100% - 32px )
       &__top
          &-book
-            width: calc( 100% - 36px ) 
-            
-         &-card
-            &:nth-child(n+4)
-               display: none
+            width: calc( 100% - 36px )
       &__card
-         flex-direction: column 
+         flex-direction: column
          width: calc( 33% - 32px )
          &:nth-child(n+4)
             display: none
@@ -40,7 +36,6 @@
       max-height: 312px
       height: 312px
       position: relative
-      
       padding: 132px 0 32px
       &__cover
          position: absolute
@@ -73,13 +68,14 @@
             justify-content: space-between
          &__button
             width: 100%
+         &__title
+            text-align: center
       &-card
          width: calc( 33% - 36px )
 
-
 @media ( max-width: 992px )
    .container
-      max-width: 740px
+      max-width: 700px
    .book
       flex-direction: column
       &__cover
@@ -104,7 +100,16 @@
          &-group
             justify-content: center
             margin-bottom: 36px
-@media ( max-width: 768px )
+   .feature
+      &__card
+         width: calc( 50% - 32px )
+         &:nth-child(n+3)
+            display: none
+   .top
+      &-card
+         width: calc( 50% - 36px )
+
+@media ( max-width: 767px )
    .container
       max-width: 576px
       width: 90%
@@ -122,15 +127,43 @@
                display: none
          &-burger
             &--activate
-            display: block      
+               display: block
    .hero
       padding-top: 36px
-   .book   
+   .book
       &__info
-         width: 90%       
+         width: 90%
+   .feature
+      &__card
+         width: calc( 100% - 32px )
+         &:nth-child(n+2)
+            display: none
+      &__top
+         &-book
+            padding-top: 26px
+         &-card
+            margin-bottom: 13px
+   .top
+      &-card
+         width: calc( 100% - 36px )
+         &__cover
+            flex-basis: 25%
+         &__info
+            flex-basis: 62%
+      &-book
+         &__title
+            margin-bottom: 36px
+         &__wrapper
+            margin: 0px -12px
+
 @media ( max-width: 576px )
    .container
       min-width: 280px
+   .excite
+      &__title
+         font-size: 28px
+         line-height: 36px
+
 @media ( max-width: 420px  )
    .book
       &__info
@@ -140,7 +173,7 @@
       &__author
          font-size: 16px
          line-height: 24px
-         margin-bottom: 32px 
+         margin-bottom: 32px
       &__order
          &-group
             flex-direction: column
@@ -149,11 +182,58 @@
             margin-top: 15px
       &__cover
          max-width: 280px
-         min-height:  333px
-         //height: 100%
+         min-height: 333px
+         height: 100%
          //min-height: 0
          width: 90%
       &__image
          width: 143px
-         max-height:  215px
-   
+         max-height: 215px
+   .feature
+      padding-top: 56px
+   .card
+      &__cover
+         height: 137px
+      &__info
+         justify-content: space-between
+      &__title
+         font-size: 20px
+         line-height: 24px
+         margin-bottom: -10px
+      &__category
+         font-size: 14px
+         line-height: 20px
+      &__price
+         font-size: 16px
+         line-height: 20px
+         margin-left: -10px
+      &__button
+         max-width: 114px
+      &__like
+         margin-right: 0
+   .top
+      &-card
+         &__title
+            font-family: 'Roboto Condensed', sans-serif
+            font-size: 16px
+            line-height: 24px
+            font-weight: 700
+         &__cover
+            width: 96px
+            min-width: 96px
+            max-height: 145px
+            flex-basis: auto
+      &-book
+         &__title
+            font-size: 28px
+            line-height: 36px
+         &__button
+            margin-top: 18px
+   .excite
+      &__button
+         margin: 8px 14px 14px
+         text-transform: none
+         font-weight: 700
+         font-size: 16px
+         line-height: 20px
+         min-height: 48px
