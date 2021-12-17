@@ -1,0 +1,138 @@
+.newsletter
+  &-wrapper
+    min-height: 236px
+    height: 100%
+    padding: 10px 61px 30px 60px
+    background-color: #1565D8
+    border-radius: 12px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &::before  
+      mask-image: url("img/Oval.png")
+      mask-position: -100% -100%
+      mask-repeat: no-repeat
+      content: ''
+  &__title
+    color: #FFF
+    font-size: 36px
+    line-height: 48px
+    max-width: 393px
+  &__group
+    margin-top: 20px
+
+.subscribe
+  position: relative
+  width: 447px
+  min-height: 56px
+  border-radius: 8px
+  overflow: hidden
+  &__input    
+    position: absolute
+    padding: 17px 75px 17px 44px
+    width: 100%
+    height: 100%
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #959EAD
+    border: 4px solid #FFF
+    &::placeholder
+      color: inherit
+    &:focus, &:focus-visible
+      outline: none
+  &__icon
+    position: absolute
+    //background-image: url("../img/email.svg")
+    top: 23px
+    left: 20px
+
+  &__button
+    cursor: pointer
+    position: absolute
+    top: 4px
+    right: 4px
+    bottom: 4px
+    min-width: 163px
+    height: calc( 100% - 8px)
+    border: none
+    background-color: $text-contrastive
+    color: #fff
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    border-radius: 4px
+    
+
+// .newsletter
+//   font-family: Mulish
+//   font-style: normal
+//   position: relative
+//   padding: 98px 0 87px 0
+//   background-image: url("../img/newsletter-bg.jpg")  //TODO mixin evif, webp
+//   background-repeat: no-repeat
+//   background-position: center
+//   background-size: cover
+  // &::before
+  //   content: ''
+  //   position: absolute
+  //   background-color: rgba($dark, 0.8);
+  //   top: 0
+  //   left: 0
+  //   // right: 0
+  //   // bottom: 0
+  //   width: 100%
+  //   height: 100%
+  // &-container
+  //   position: relative
+  //   display: flex
+  //   align-items: center
+  //   justify-content: space-between
+  //   max-width: 731px
+  //   margin: auto
+//   &-title
+//     margin: 0
+//     color: $light
+//     font-weight: 300
+//     font-size: 24px
+//     line-height: 30.12px
+//     &__strong
+//       display: block
+//       font-weight: 600
+//       font-size: 36px
+//       line-height: 45.18px
+//       text-transform: uppercase
+// .subscribe
+//   position: relative
+//   width: 350px
+//   min-height: 55px
+//   border-radius: 4px
+//   overflow: hidden
+//   &__input    
+//     position: absolute
+//     padding: 17px 75px 17px 33px
+//     width: 100%
+//     height: 100%
+//     font-weight: 300
+//     font-size: 14px
+//     line-height: 17.57px
+//     color: #BDBDBD
+//     border: none
+//     &::placeholder
+//       color: inherit
+//     &:focus, &:focus-visible
+//       outline: none
+//   &__button
+//     cursor: pointer
+//     position: absolute
+//     top: 0
+//     right: 0
+//     min-width: 65px
+//     height: 100%
+//     border: none
+//     background-color: $primary
+//     color: $light
+//     font-weight: 700
+//     font-size: 12px
+//     line-height: 15.06px
