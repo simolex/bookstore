@@ -73,7 +73,12 @@
     max-width: 101px
     min-height: 36px
   &__like
+    width: 21px
+    height: 21px
+    fill: $like-color
     margin-right: 16px
+    // &:hover
+    //   fill: $like-liked
 
 .top
   &-card
@@ -104,12 +109,12 @@
       flex-direction: column
       align-self: stretch
       justify-content: space-around
-      margin-right: -15px  
+      margin-right: -15px
     &__image
       z-index: 3
       max-width: 100%
       min-height: 100%
-      object-fit: cover 
+      object-fit: cover
     &__title
       font-weight: 500
       font-size: 22px

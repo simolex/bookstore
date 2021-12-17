@@ -5,10 +5,9 @@
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
-
   &__button
     cursor: pointer
-    min-width:  179px
+    min-width: 179px
     width: 179px
     max-height: 44px
     height: 44px
@@ -44,29 +43,29 @@
       font-size: 24px
       line-height: 32px
     &__picture
-      grid-row:  span 2
+      grid-row: span 2
     &__info
-      grid-row:  span 1
-      padding-left: 10px 
+      grid-row: span 1
+      padding-left: 10px
       justify-content: space-between
-      padding-bottom: 5px     
+      padding-bottom: 5px
   &-tape
     display: grid
     grid-template-columns: 1fr
     grid-template-rows: repeat(3, 150px)
     grid-gap: 30px
-    
+
   &-item
     display: flex
     &__picture
       max-width: calc(51% - 30px)
       margin-right: 30px
-    &__info 
+    &__info
       max-width: calc(54% - 30px)
       justify-content: space-between
       margin-right: -50px
       padding: 5px 0 5px
-      
+
     &__title
       font-family: 'Roboto', sans-serif
       font-style: normal
@@ -75,7 +74,7 @@
       line-height: 32px
   &__picture
     overflow: hidden
-    border-radius: 8px    
+    border-radius: 8px
   &__image
     width: 100%
     min-height: 100%
@@ -89,7 +88,7 @@
     font-weight: 400
     font-size: 14px
     line-height: 20px
-    color: $date-color
+    color: $text-color-p1
   &__title
     font-size: 48px
     line-height: 60px
@@ -108,4 +107,3 @@
     font-size: 16px
     line-height: 20px
     letter-spacing: 0.2px
-
