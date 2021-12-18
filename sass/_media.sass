@@ -76,6 +76,12 @@
       &__remark
          margin-top: 0
          margin-bottom: 5px
+   .brand
+      &__place
+         width: 19%
+         &:nth-child(n+11)
+            display: none
+
 @media ( max-width: 992px )
    .container
       max-width: 700px
@@ -113,7 +119,7 @@
          width: calc( 50% - 36px )
    .stories
       &-wrapper
-         padding: 45px 0 119px 0
+         padding: 45px 0 38px 0
       &__title
          font-size: 28px
          line-height: 36px
@@ -142,6 +148,19 @@
       &__remark
          font-size: 12px
          line-height: 20px
+   .partners
+      padding: 37px 0 36px
+      &__title
+         line-height: 30px
+      &__places
+         margin: 27px auto 0 auto
+   .brand
+      &__place
+         margin-bottom: 20px
+         transform: scale(0.9)
+         width: 24%
+         &:nth-child(n+9)
+            display: none
 
 @media ( max-width: 767px )
    .container
@@ -267,6 +286,11 @@
          &-icon
             width: 10px
             height: 14px
+   .brand
+      &__place
+         width: 33%
+         &:nth-child(n+7)
+            display: none
 
 @media ( max-width: 576px )
    .container
@@ -293,6 +317,13 @@
          &-group
             width: 120px
             order: 3
+   .brand
+      justify-content: space-around
+      width: 90%
+      &__place
+         width: 40%
+         &:nth-child(n+7)
+            display: none
 
 @media ( max-width: 420px  )
    .book
