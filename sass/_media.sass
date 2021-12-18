@@ -155,6 +155,43 @@
             margin-bottom: 36px
          &__wrapper
             margin: 0px -12px
+   .categories
+      margin-top: 47px
+      padding-bottom: 54px
+      &__container
+         padding-top: 55px
+      &__line
+         height: 374px
+   .category
+      padding: 20px 10px 20px 10px
+      min-height: 182px
+      max-height: 182px
+      &__image
+         max-width: 36px
+         max-height: 36px
+         margin-bottom: 14px
+      &__title
+         font-family: 'Roboto Condensed', sans-serif
+         font-weight: 700
+         font-size: 16px
+         line-height: 20px
+         margin-bottom: 32px
+      &__comment
+         font-size: 12px
+         line-height: 20px
+      &__button
+         position: static
+         transform: translateY(0)
+         transform: scale(0.85)
+         //min-height: 48px
+         padding: 0 5px
+         &-group
+            width: 100%
+            margin-top: 30px
+            //margin: 30px auto 0
+            display: flex
+            align-items: center
+            justify-content: center
 
 @media ( max-width: 576px )
    .container
@@ -163,6 +200,24 @@
       &__title
          font-size: 28px
          line-height: 36px
+   .unreleased
+      padding: 48px 0 44px
+      &-wrapper
+         flex-direction: column
+      &__title
+         font-size: 28px
+         line-height: 36px
+         margin-bottom: 40px
+      &__slider
+         margin-top: 0
+         margin-bottom: 37px
+         max-width: 204px
+         order: 2
+      &__arrow
+         transform: scale(0.85)
+         &-group
+            width: 120px
+            order: 3
 
 @media ( max-width: 420px  )
    .book
