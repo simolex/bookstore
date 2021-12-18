@@ -20,29 +20,66 @@
       font-size: 18px
       line-height: 32px
    &__image
-      width: 100%
+      min-width: 100%
+      max-width: 200%
       min-height: 100%
-      object-fit: cover
+      max-height: 200%
+      object-fit: contain
+      object-position: 50% 50%
    &__main
       &-video
          flex-basis: 100%
+         min-height: 380px
          max-height: 380px
          width: 100%
          margin-bottom: 30px
+         overflow: hidden
    &__other
       &-group
          display: flex
          margin: -15px
       &-story
          margin: 15px
+      &-video
+         width: 100%
+         min-height: 200px
+         max-height: 200px
+         height: 200px
+         overflow: hidden
+
+   &__play
+      width: 40px
+      height: 43px
+      fill: inherit
+      padding: 5px 0 0 5px
+      &-button
+         fill: #FFF
+         width: 100px
+         height: 100px
+         border-radius: 50px
+         //color: #fff
+         background-color: transparent
+         display: flex
+         align-items: center
+         justify-content: center
+      &-wrapper
+         position: absolute
+         top: 50%
+         left: 50%
+         transform: translate(-50%, -50%)
+         z-index: 10
+
+.wallpaper
+   position: relative
+   display: block
 
 .story
    width: calc( 33.33% - 30px )
    max-height: 280px
+   min-height: 280px
    &__image
       width: 100%
-      max-height: 200px
-      height: 100%
+      min-height: 100%
       object-fit: cover
    &__info
       display: flex

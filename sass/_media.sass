@@ -72,7 +72,10 @@
             text-align: center
       &-card
          width: calc( 33% - 36px )
-
+   .story
+      &__remark
+         margin-top: 0
+         margin-bottom: 5px
 @media ( max-width: 992px )
    .container
       max-width: 700px
@@ -108,6 +111,37 @@
    .top
       &-card
          width: calc( 50% - 36px )
+   .stories
+      &-wrapper
+         padding: 45px 0 119px 0
+      &__title
+         font-size: 28px
+         line-height: 36px
+         text-align: center
+         margin-bottom: 24px
+         &-group
+            flex-direction: column
+            align-items: center
+            margin-bottom: 35px
+      &__description
+         flex-basis: 100%
+         font-size: 18px
+         line-height: 25px
+      &__break
+         display: none
+      &__play
+         &-button
+            transform: scale(0.6)
+   .story
+      width: calc( 50% - 30px)
+      &:nth-child(n+3)
+         display: none
+      &__title
+         font-size: 16px
+         line-height: 20px
+      &__remark
+         font-size: 12px
+         line-height: 20px
 
 @media ( max-width: 767px )
    .container
@@ -192,6 +226,47 @@
             display: flex
             align-items: center
             justify-content: center
+   .stories
+      &__main
+         &-video
+            max-height: 210px
+            min-height: 210px
+            margin-bottom: 20px
+      &__other
+         &-video
+            min-height: 138px
+            max-height: 138px
+         &-group
+            margin: -10px
+         &-story
+            margin: 10px
+   .story
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      max-height: 233px
+      min-height: 233px
+      width: calc( 50% - 20px)
+      &__info
+         //padding-top: 16px
+         flex-direction: column
+         align-items: center
+         align-content: center
+         justify-content: end
+         justify-items: end
+      &__title
+         margin-bottom: 6px
+      &__remark
+         flex-basis: auto
+         order: 2
+         margin-bottom: 16px
+      &__flag
+         padding: 0
+         order: 3
+         &-icon
+            width: 10px
+            height: 14px
 
 @media ( max-width: 576px )
    .container
