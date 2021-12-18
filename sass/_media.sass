@@ -87,7 +87,9 @@
          justify-content: center
       &__title
          max-width: 100%
-
+   .footer
+      &-wrapper
+         column-gap: 20px
 @media ( max-width: 992px )
    .container
       max-width: 700px
@@ -209,6 +211,41 @@
       &-tape
          grid-template-rows: repeat(3, 150px)
          grid-gap: 28px
+   .footer
+      &-wrapper
+         grid-template-columns: repeat(2, 1fr)
+         grid-column-gap: 30px
+         grid-row-gap: 0
+      &__product
+         grid-column: 1/ span 1
+         grid-row: 1/ span 4
+      &__service
+         grid-column: span 1
+         grid-row: 1/ span 4
+      &__company
+         grid-column: span 1
+         grid-row: 6/span 4
+         padding-left: 0
+      &__more
+         grid-column: span 1
+         grid-row: 6/span 4
+         padding-left: 0
+      &__logo
+         &-place
+            grid-column: 1/ span 2
+            grid-row: 10/span 4
+            display: flex
+            flex-direction: column
+            align-items: center
+      &__like
+         display: none
+      &__copyright
+         display: none
+      &__title
+         margin-bottom: 20px
+      &__item
+         &:not(:last-child)
+            margin-bottom: 15px
 
 @media ( max-width: 767px )
    .container
@@ -344,6 +381,8 @@
          text-align: left
          font-size: 28px
          line-height: 36px
+   .footer
+      padding-top: 48px
 
 @media ( max-width: 576px )
    .container
@@ -429,6 +468,35 @@
          bottom: 12px
          right: 11px
          height: 42px
+   .footer
+      &-wrapper
+         grid-column-gap: 10px
+         padding-left: 6px
+      &__title
+         font-size: 16px
+         line-height: 22px
+      &__link
+         font-size: 14px
+         line-height: 20px
+      &__company
+         grid-column: span 1
+         grid-row: 5/span 3
+      &__more
+         grid-column: span 1
+         grid-row: 5/span 3
+      &__logo
+         &-place
+            grid-column: 1/ span 2
+            grid-row: 8/span 4
+            padding-top: 34px
+            justify-content: space-between
+            padding-bottom: 54px
+      &__tagline
+         margin: 0
+         text-align: center
+      &__social
+         &-links
+            width: 100%
 
 @media ( max-width: 420px  )
    .book
