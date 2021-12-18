@@ -1412,8 +1412,11 @@ body {
   line-height: 20px;
 }
 
-.blog-wrapper {
+.blog__wrapper {
   margin-top: 40px;
+}
+
+.blog-wrapper {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -ms-grid;
@@ -2059,6 +2062,61 @@ body {
   .brand__place:nth-child(n+9) {
     display: none;
   }
+  .blog-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .blog__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .blog__description {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .blog__date {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .blog__more {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .blog-item__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .blog-item__picture {
+    max-width: calc(39% - 20px);
+    margin-right: 20px;
+  }
+  .blog-item__info {
+    max-width: calc(68% - 20px);
+    padding: 0;
+  }
+  .blog-main {
+    -ms-grid-rows: (120px)[3];
+        grid-template-rows: repeat(3, 120px);
+    grid-gap: 0;
+  }
+  .blog-main__picture {
+    grid-row: span 2;
+  }
+  .blog-main__info {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .blog-main__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .blog-tape {
+    -ms-grid-rows: (150px)[3];
+        grid-template-rows: repeat(3, 150px);
+    grid-gap: 28px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2299,6 +2357,49 @@ body {
   .brand__place:nth-child(n+7) {
     display: none;
   }
+  .blog {
+    padding: 56px 0 101px;
+  }
+  .blog__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog__wrapper {
+    margin-top: 48px;
+  }
+  .blog__title {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .blog__button {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 34px;
+    min-width: 159px;
+    width: 159px;
+  }
+  .blog-main {
+    -ms-grid-rows: (120px)[2];
+        grid-template-rows: repeat(2, 120px);
+  }
+  .blog-main__picture {
+    padding: 0 4px;
+    grid-row: span 1;
+  }
+  .blog-main__info {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+  }
+  .blog-tape {
+    -ms-grid-rows: (93px)[3];
+        grid-template-rows: repeat(3, 93px);
+    grid-gap: 29px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -2395,10 +2496,6 @@ body {
     line-height: 20px;
     min-height: 48px;
   }
-}
-
-.blog {
-  display: none;
 }
 
 .newsletter {

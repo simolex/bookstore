@@ -161,6 +161,48 @@
          width: 24%
          &:nth-child(n+9)
             display: none
+   .blog
+      &-wrapper
+         grid-template-columns: 1fr
+         grid-gap: 30px
+      &__title
+         font-size: 28px
+         line-height: 36px
+      &__description
+         font-size: 12px
+         line-height: 24px
+      &__date
+         font-size: 10px
+         line-height: 20px
+      &__more
+         font-size: 10px
+         line-height: 20px
+      &-item
+         &__title
+            font-size: 14px
+            line-height: 20px
+         &__picture
+            max-width: calc(39% - 20px)
+            margin-right: 20px
+         &__info
+            max-width: calc(68% - 20px)
+            padding: 0
+      &-main
+         grid-template-rows: repeat(3, 120px)
+         grid-gap: 0
+         &__picture
+            grid-row: span 2
+         &__info
+            padding-top: 20px
+            padding-left: 0
+            padding-bottom: 0
+
+         &__title
+            font-size: 16px
+            line-height: 20px
+      &-tape
+         grid-template-rows: repeat(3, 150px)
+         grid-gap: 28px
 
 @media ( max-width: 767px )
    .container
@@ -324,6 +366,31 @@
          width: 40%
          &:nth-child(n+7)
             display: none
+   .blog
+      padding: 56px 0 101px
+      &__section
+         flex-direction: column
+      &__wrapper
+         margin-top: 48px
+      &__title
+         font-size: 28px
+         line-height: 36px
+         text-align: center
+      &__button
+         order: 3
+         margin-top: 34px
+         min-width: 159px
+         width: 159px
+      &-main
+         grid-template-rows: repeat(2, 120px)
+         &__picture
+            padding: 0 4px
+            grid-row: span 1
+         &__info
+            align-self: stretch
+      &-tape
+         grid-template-rows: repeat(3, 93px)
+         grid-gap: 29px
 
 @media ( max-width: 420px  )
    .book
