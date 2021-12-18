@@ -81,6 +81,12 @@
          width: 19%
          &:nth-child(n+11)
             display: none
+   .newsletter
+      &-wrapper
+         flex-direction: column
+         justify-content: center
+      &__title
+         max-width: 100%
 
 @media ( max-width: 992px )
    .container
@@ -333,6 +339,11 @@
          width: 33%
          &:nth-child(n+7)
             display: none
+   .newsletter
+      &__title
+         text-align: left
+         font-size: 28px
+         line-height: 36px
 
 @media ( max-width: 576px )
    .container
@@ -367,7 +378,7 @@
          &:nth-child(n+7)
             display: none
    .blog
-      padding: 56px 0 101px
+      padding: 56px 0 48px
       &__section
          flex-direction: column
       &__wrapper
@@ -391,6 +402,33 @@
       &-tape
          grid-template-rows: repeat(3, 93px)
          grid-gap: 29px
+   .newsletter
+      &-wrapper
+         border-radius: 0px
+         padding: 26px 0 28px
+         width: 100%
+      &__container
+         min-width: 320px
+         width: 100%
+      &__title
+         width: 85%
+         margin: 0 auto
+      &__group
+         margin: 32px auto 0
+         width: 85%
+      &__subscribe
+         width: 100%
+   .subscribe
+      min-height: 112px
+      &__input
+         padding: 17px 11px 73px 48px
+      &__button
+         top: auto
+         width: calc( 100% - 22px)
+         left: 11px
+         bottom: 12px
+         right: 11px
+         height: 42px
 
 @media ( max-width: 420px  )
    .book
