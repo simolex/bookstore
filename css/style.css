@@ -1229,11 +1229,12 @@ body {
 }
 
 .stories__play-button {
+  cursor: pointer;
   fill: #FFF;
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1317,6 +1318,7 @@ body {
 }
 
 .story__flag {
+  cursor: pointer;
   -ms-flex-line-pack: center;
       align-content: center;
 }
