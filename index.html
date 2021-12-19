@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ehya - Bookstore</title>
+    <title>Ehya - Книжный магазин</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
@@ -43,6 +43,7 @@
               data-toggle="modal"
               data-href="sale-modal"
               data-text="Получить"
+              data-typeform="gift"
               class="button navbar__get-book"
             >
               Получить
@@ -76,7 +77,15 @@
               золотыми стратегиями ценообразования на творческую работу.
             </p>
             <div class="book__order-group">
-              <button class="button button--primary book__order">Купить сейчас</button>
+              <button
+                data-toggle="modal"
+                data-href="sale-modal"
+                data-text="Купить"
+                data-typeform="order"
+                class="button button--primary book__order"
+              >
+                Купить сейчас
+              </button>
               <a href="#" class="button book__order book__order--demo">Читать демо</a>
             </div>
           </div>
@@ -111,7 +120,15 @@
                   <span class="card__category card__category--pp">Art & Design</span>
                   <span class="price card__price">$25.00</span>
                   <div class="card__order">
-                    <button class="button-round card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="excite-order"
+                      class="button-round card__button"
+                    >
+                      Купить
+                    </button>
                     <svg class="card__like">
                       <title>Icon: Like</title>
                       <use xlink:href="img/like.svg#like"></use>
@@ -135,7 +152,15 @@
                   <span class="card__category card__category--pp">Education</span>
                   <span class="price card__price">$28.00</span>
                   <div class="card__order">
-                    <button class="button-round card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="excite-order"
+                      class="button-round card__button"
+                    >
+                      Купить
+                    </button>
                     <svg class="card__like">
                       <title>Icon: Like</title>
                       <use xlink:href="img/like.svg#like"></use>
@@ -159,7 +184,15 @@
                   <span class="card__category card__category--pp">Novel</span>
                   <span class="price card__price">$19.50</span>
                   <div class="card__order">
-                    <button class="button-round card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="excite-order"
+                      class="button-round card__button"
+                    >
+                      Купить
+                    </button>
                     <svg class="card__like">
                       <title>Icon: Like</title>
                       <use xlink:href="img/like.svg#like"></use>
@@ -183,7 +216,15 @@
                   <span class="card__category card__category--pp">Novel</span>
                   <span class="price card__price">$20.00</span>
                   <div class="card__order">
-                    <button class="button-round card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="excite-order"
+                      class="button-round card__button"
+                    >
+                      Купить
+                    </button>
                     <svg class="card__like">
                       <title>Icon: Like</title>
                       <use xlink:href="img/like.svg#like"></use>
@@ -207,7 +248,15 @@
                   <span class="card__category card__category--pp">Business</span>
                   <span class="price card__price">$23.00</span>
                   <div class="card__order">
-                    <button class="button-round card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="excite-order"
+                      class="button-round card__button"
+                    >
+                      Купить
+                    </button>
                     <svg class="card__like">
                       <title>Icon: Like</title>
                       <use xlink:href="img/like.svg#like"></use>
@@ -231,7 +280,15 @@
                   <span class="card__category card__category--pp">Motivation</span>
                   <span class="price card__price">$23.00</span>
                   <div class="card__order">
-                    <button class="button-round card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="excite-order"
+                      class="button-round card__button"
+                    >
+                      Купить
+                    </button>
                     <svg class="card__like">
                       <title>Icon: Like</title>
                       <use xlink:href="img/like.svg#like"></use>
@@ -261,7 +318,15 @@
                   <span class="top-card__title">Sprint : Solve,<br />Test in 5 Days</span>
                   <span class="price top-card__price">$23.00</span>
                   <div class="top-card__order">
-                    <button class="button-round top-card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="top-order"
+                      class="button-round top-card__button"
+                    >
+                      Купить
+                    </button>
                   </div>
                 </div>
                 <!-- /.card__info -->
@@ -280,7 +345,15 @@
                   <span class="top-card__title">Hacking Growth<br />Break Problem</span>
                   <span class="price top-card__price">$23.00</span>
                   <div class="top-card__order">
-                    <button class="button-round top-card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="top-order"
+                      class="button-round top-card__button"
+                    >
+                      Купить
+                    </button>
                   </div>
                 </div>
                 <!-- /.card__info -->
@@ -299,7 +372,15 @@
                   <span class="top-card__title">Very Nice a<br />Novel by Mercy</span>
                   <span class="price top-card__price">$23.00</span>
                   <div class="top-card__order">
-                    <button class="button-round top-card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="top-order"
+                      class="button-round top-card__button"
+                    >
+                      Купить
+                    </button>
                   </div>
                 </div>
                 <!-- /.card__info -->
@@ -318,7 +399,15 @@
                   <span class="top-card__title">Hooked : How to<br />Build Products</span>
                   <span class="price top-card__price">$23.00</span>
                   <div class="top-card__order">
-                    <button class="button-round top-card__button">Купить</button>
+                    <button
+                      data-toggle="modal"
+                      data-href="sale-modal"
+                      data-text="Купить"
+                      data-typeform="top-order"
+                      class="button-round top-card__button"
+                    >
+                      Купить
+                    </button>
                   </div>
                 </div>
                 <!-- /.card__info -->
@@ -924,20 +1013,20 @@
       </div>
     </footer>
     <div class="modal" id="sale-modal">
-      <div class="modal__overlay modal__overlay--visible"></div>
+      <div class="modal__overlay"></div>
       <!-- /.modal_overlay -->
-      <div class="modal__dialog modal__dialog--visible">
+      <div class="modal__dialog">
         <div class="modal__dialog-content">
           <a href="#" class="modal__close">
             <img src="img/close.svg" alt="icon: close" />
           </a>
           <h3 class="modal__title">Регистрация</h3>
           <form action="send.php" method="post" class="form modal__form">
-            <input type="hidden" name="type" value="booking" />
+            <input type="hidden" name="type" value="get-book" />
             <input
               type="text"
               class="input modal__input"
-              placeholder="Your Full Name*"
+              placeholder="Ваше ФИО*"
               name="name"
               minlength="2"
               required
@@ -945,7 +1034,7 @@
             <input
               type="tel"
               class="input modal__input"
-              placeholder="Phone Number*"
+              placeholder="Номер телефона*"
               name="phone"
               data-mask="+7 (000) 000-00-00"
               required
@@ -953,17 +1042,17 @@
             <input
               type="email"
               class="input modal__input"
-              placeholder="Email*"
+              placeholder="Ваш Е-Майл*"
               name="email"
               required
             />
             <textarea
               class="message modal__message"
-              placeholder="Message"
+              placeholder="Напишите нам ..."
               name="message"
             ></textarea>
-            <button class="button modal__button" type="submit">Send</button>
-            <span class="modal__info">* Required Fields</span>
+            <button class="button modal__button" type="submit">Отправить</button>
+            <span class="modal__info">*-Важные</span>
           </form>
         </div>
         <!-- /.modal_dialog -->

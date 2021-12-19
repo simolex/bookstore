@@ -14,6 +14,7 @@ const modalForm = () => {
   const OpenModal = (event) => {
     const idModal = event.target.dataset.href;
     const textLink = event.target.dataset.text;
+    const typeForm = event.target.dataset.typeform;
 
     const modalContainer = document.getElementById(idModal);
 
@@ -21,6 +22,8 @@ const modalForm = () => {
     modalContainer.querySelector(".modal__overlay").classList.add("modal__overlay--visible");
     modalContainer.querySelector(".modal__dialog").classList.add("modal__dialog--visible");
     modalContainer.querySelector(".modal__button").innerHTML = textLink;
+    modalContainer.querySelector("[name=type]").value = typeForm;
+
     //toggleFixerBody();
   };
 
