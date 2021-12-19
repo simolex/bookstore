@@ -2,7 +2,6 @@ const modalForm = () => {
   const modalButtons = document.querySelectorAll("[data-toggle=modal]");
   const closeButtons = document.querySelectorAll(".modal__close");
 
-  console.log(modalButtons);
   modalButtons.forEach((itemModal) => {
     itemModal.addEventListener("click", (e) => OpenModal(e));
   });
