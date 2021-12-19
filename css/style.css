@@ -1095,6 +1095,7 @@ body {
 }
 
 .unreleased__arrow {
+  cursor: pointer;
   border: 2px solid #FFFFFF;
   fill: #fff;
   width: 56px;
@@ -1132,6 +1133,7 @@ body {
 }
 
 .unreleased__arrow--disabled {
+  cursor: default;
   border-color: #5A7184;
   fill: #5A7184;
 }
