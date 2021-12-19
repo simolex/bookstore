@@ -1385,6 +1385,11 @@ body {
           justify-content: center;
 }
 
+.stories__play-button--needed {
+  fill: #1565D8;
+  background-color: #fff;
+}
+
 .stories__play-wrapper {
   position: absolute;
   top: 50%;
@@ -1431,6 +1436,7 @@ body {
           justify-content: space-between;
   -ms-flex-line-pack: end;
       align-content: end;
+  padding-top: 20px;
 }
 
 .story__title {
@@ -2081,7 +2087,7 @@ body {
   }
   .stories__play-button:hover {
     fill: #1565D8;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
   }
   .card__like {
     -webkit-transition: 200ms ease all;
@@ -2768,6 +2774,7 @@ body {
     width: calc( 50% - 20px);
   }
   .story__info {
+    padding-top: 5px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2791,7 +2798,6 @@ body {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin-bottom: 16px;
   }
   .story__flag {
     padding: 0;
@@ -3092,6 +3098,12 @@ body {
     font-size: 16px;
     line-height: 20px;
     min-height: 48px;
+  }
+  .story__info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2px 0 5px;
   }
   .modal__dialog {
     max-width: 280px;
