@@ -777,6 +777,10 @@ body {
   margin-right: 16px;
 }
 
+.card__like--liked {
+  fill: #EC1F46;
+}
+
 .top-card {
   padding: 0;
   padding-right: 5px;
