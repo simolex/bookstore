@@ -452,6 +452,11 @@ body {
   margin-right: 24px;
 }
 
+.navbar-menu__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navbar__get-book {
   margin-left: 36px;
   font-weight: 700;
