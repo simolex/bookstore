@@ -12,6 +12,7 @@
 
     <script src="js/swiper-bundle.min.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script src="js/smothScroll.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -23,16 +24,19 @@
           <div class="navbar__menu-group navbar__menu-group--hidden">
             <ul class="navbar-menu navbar__menu">
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Рекомендации</a>
+                <a href="#feature" class="navbar-menu__link">Рекомендации</a>
               </li>
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Книги</a>
+                <a href="#book" class="navbar-menu__link">Книги</a>
               </li>
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Блог</a>
+                <a href="#blog" class="navbar-menu__link">Блог</a>
               </li>
             </ul>
             <button class="button navbar__get-book">Получить</button>
+            <button class="burger navbar__menu-close navbar__menu-close--activate">
+              <img src="img/close.svg" alt="Icon: Menu" class="burger__image" />
+            </button>
           </div>
           <button class="burger navbar__menu-burger navbar__menu-burger--activate">
             <img src="img/menu.svg" alt="Icon: Menu" class="burger__image" />
@@ -78,7 +82,7 @@
       <div class="container">
         <div class="feature__wrapper">
           <div class="excite feature__excite">
-            <h2 class="title excite__title">Рекомендации</h2>
+            <h2 class="title excite__title" id="feature">Рекомендации</h2>
             <div class="excite__wrapper">
               <div class="card feature__card">
                 <div class="card__cover">
@@ -439,7 +443,7 @@
     <section class="unreleased">
       <div class="container">
         <div class="unreleased-wrapper">
-          <h2 class="title unreleased__title">Неизданные книги</h2>
+          <h2 class="title unreleased__title" id="book">Неизданные книги</h2>
           <div class="swiper unreleased__slider">
             <div class="swiper-wrapper unreleased__vitrine">
               <div class="swiper-slide unreleased__item">
@@ -691,7 +695,7 @@
     <section class="blog">
       <div class="container">
         <div class="blog__section">
-          <h2 class="title blog__title">Ehya Блог</h2>
+          <h2 class="title blog__title" id="blog">Ehya Блог</h2>
           <a href="#" class="blog__button">Все Блоги</a>
           <div class="blog-wrapper blog__wrapper">
             <div class="blog-main blog__main">
@@ -796,7 +800,9 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__logo-place">
-            <img src="img/logo.svg" alt="Logo: Ehya" class="logo footer__logo" />
+            <a href="#" class="logo">
+              <img src="img/logo.svg" alt="Logo: Ehya" class="logo footer__logo" />
+            </a>
             <p class="footer__tagline">Создайте современный и креативный веб-сайт с crealand</p>
             <div class="footer__social-links">
               <a href="#" class="footer__social-link">

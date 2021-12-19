@@ -472,6 +472,10 @@ body {
   display: none;
 }
 
+.navbar__menu-close--activate {
+  display: none;
+}
+
 .navbar__menu-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2319,11 +2323,50 @@ body {
   .navbar {
     margin-top: 0;
     padding: 18px 0;
+    position: relative;
+  }
+  .navbar-menu__item {
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
+  .navbar__get-book {
+    display: none;
+  }
+  .navbar__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .navbar__menu-group {
+    border-radius: 12px;
+    background-color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 13px;
+    border: 2px solid #1565D8;
+    padding: 30px 50px 20px 40px;
   }
   .navbar__menu-group--hidden {
     display: none;
   }
   .navbar__menu-burger--activate {
+    display: block;
+  }
+  .navbar__menu-close {
+    position: absolute;
+    right: 0;
+    top: 13px;
+  }
+  .navbar__menu-close--activate {
     display: block;
   }
   .hero {
