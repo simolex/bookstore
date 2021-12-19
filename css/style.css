@@ -1182,14 +1182,15 @@ body {
 }
 
 .stories__image {
-  min-width: 100%;
-  max-width: 200%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   min-height: 100%;
-  max-height: 200%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .stories__main-video {
@@ -1200,6 +1201,7 @@ body {
   width: 100%;
   margin-bottom: 30px;
   overflow: hidden;
+  position: relative;
 }
 
 .stories__other-group {
@@ -1257,7 +1259,6 @@ body {
 
 .wallpaper {
   position: relative;
-  display: block;
 }
 
 .story {
@@ -2036,6 +2037,10 @@ body {
   .top-card {
     width: calc( 33% - 36px);
   }
+  .stories__main-video {
+    max-height: 210px;
+    min-height: 210px;
+  }
   .story__remark {
     margin-top: 0;
     margin-bottom: 5px;
@@ -2409,8 +2414,6 @@ body {
     line-height: 20px;
   }
   .stories__main-video {
-    max-height: 210px;
-    min-height: 210px;
     margin-bottom: 20px;
   }
   .stories__other-video {
