@@ -527,8 +527,8 @@ body {
 
 .invalid__text {
   position: unset;
-  top: 100%;
-  right: 0;
+  top: -18px;
+  left: 0;
   color: #FAAD13;
   background-color: transparent;
   font-weight: 700;
@@ -1728,6 +1728,7 @@ body {
 
 .newsletter__group {
   margin-top: 20px;
+  position: relative;
 }
 
 .subscribe {
@@ -2314,12 +2315,16 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .newsletter__title {
     max-width: 100%;
+    text-align: right;
   }
   .footer-wrapper {
     -webkit-column-gap: 20px;

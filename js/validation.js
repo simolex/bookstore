@@ -62,7 +62,7 @@ $(document).ready(function () {
       },
       errorPlacement: function (error, element) {
         if (element.parent().hasClass("subscribe") && element.attr("name") == "email") {
-          console.log();
+          //console.log();
           element.closest(".newsletter__group").children(".invalid__text").remove();
           error.addClass("invalid__text--position");
           error.insertAfter(".subscribe");

@@ -3,8 +3,8 @@
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
-//$secret = require('../../.smtp.php');
-$secret = require('../../../.credital/.smtp.php');
+$secret = require('../../.smtp.php');
+//$secret = require('../../../.credital/.smtp.php');
 
 // Переменные, которые отправляет пользователь
 $type = (isset($_POST['type']) && !empty($_POST['type'])) ? htmlspecialchars($_POST['type']) : ''; 
