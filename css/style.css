@@ -2743,6 +2743,12 @@ body {
   .stories__other-story {
     margin: 10px;
   }
+  .stories__description {
+    text-align: center;
+  }
+  .stories__title-group {
+    padding: 0 5px;
+  }
   .story {
     display: -webkit-box;
     display: -ms-flexbox;
