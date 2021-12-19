@@ -4,9 +4,9 @@ const categorySlider = new Swiper(".categories__line", {
   wrapperClass: "categories-wrapper",
   slideClass: "category",
   navigation: {
-    nextEl: ".category__button--next",
-    prevEl: ".category__button--prev",
-    disabledClass: "category__button--disabled",
+    nextEl: ".categories__button--next",
+    prevEl: ".categories__button--prev",
+    disabledClass: "categories__button--disabled",
   },
 
   slidesPerView: 4,
