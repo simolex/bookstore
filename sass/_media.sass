@@ -21,6 +21,9 @@
       &__top
          &-book
             width: calc( 100% - 36px )
+         &-card
+            &:nth-child(n+4)
+               display: none
       &__card
          flex-direction: column
          width: calc( 33% - 32px )
@@ -127,6 +130,13 @@
          width: calc( 50% - 32px )
          &:nth-child(n+3)
             display: none
+      &__top
+         &-card
+            &:nth-child(n+5)
+               display: none
+            &:nth-child(-n+5)
+               display: flex
+
    .top
       &-card
          width: calc( 50% - 36px )
