@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
     <script src="js/swiper-bundle.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/jquery.core.min.js" defer></script>
+    <script src="js/jquery.validate.min.js" defer></script>
+    <script src="js/jquery.mask.min.js" defer></script>
+    <script src="js/validation.js" defer></script>
     <script src="js/smothScroll.js" defer></script>
     <script src="js/toggleLike.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -34,7 +39,14 @@
                 <a href="#blog" class="navbar-menu__link">Блог</a>
               </li>
             </ul>
-            <button class="button navbar__get-book">Получить</button>
+            <button
+              data-toggle="modal"
+              data-href="sale-modal"
+              data-text="Получить"
+              class="button navbar__get-book"
+            >
+              Получить
+            </button>
             <button class="burger navbar__menu-close navbar__menu-close--activate">
               <img src="img/close.svg" alt="Icon: Menu" class="burger__image" />
             </button>
@@ -911,5 +923,53 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="sale-modal">
+      <div class="modal__overlay modal__overlay--visible"></div>
+      <!-- /.modal_overlay -->
+      <div class="modal__dialog modal__dialog--visible">
+        <div class="modal__dialog-content">
+          <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="icon: close" />
+          </a>
+          <h3 class="modal__title">Регистрация</h3>
+          <form action="send.php" method="post" class="form modal__form">
+            <input type="hidden" name="type" value="booking" />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              minlength="2"
+              required
+            />
+            <input
+              type="tel"
+              class="input modal__input"
+              placeholder="Phone Number*"
+              name="phone"
+              data-mask="+7 (000) 000-00-00"
+              required
+            />
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+            <textarea
+              class="message modal__message"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </form>
+        </div>
+        <!-- /.modal_dialog -->
+      </div>
+      <!-- ./modal__dialog-wrapper -->
+    </div>
+    <!-- /.modal -->
   </body>
 </html>

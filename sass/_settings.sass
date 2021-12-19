@@ -48,6 +48,61 @@ body
   font-style: normal
   font-weight: 700
   letter-spacing: 0.2px
+
+.input
+  background-color: #FFF
+  color: $text-color
+  border-radius: 4px
+  padding: 0 23px
+  height: 50px
+  border: none
+  &:focus, &:focus-visible
+    outline: none
+  &::placeholder
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    color: $text-color-p1
+.message
+  background-color: #fff
+  color: $text-color
+  border-radius: 4px
+  padding: 18px 23px
+  border: none
+  resize: none
+  &:focus, &:focus-visible
+    outline: none
+  //TODO Scroll
+  &::placeholder
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    color: $text-color-p1
+.form
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+.invalid
+  &__field
+    &-error
+      position: relative
+      border: 1px solid lighten($text-contrastive, 0.1)
+    &-valid
+      position: relative
+      border: 1px solid lighten($text-color, 0.1)
+  &__text
+    position: unset
+    top: 100%
+    right: 0
+    color: $text-contrastive
+    background-color: transparent
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    &--position
+      position: absolute
+
 // .arrow
 //   width: 56px
 //   height: 56px

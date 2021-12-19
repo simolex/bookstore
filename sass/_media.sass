@@ -533,6 +533,11 @@
       &__social
          &-links
             width: 100%
+   .modal
+      &__dialog
+         max-width: 412px
+         &-content
+            padding: 33px 55px
 
 @media ( max-width: 420px  )
    .book
@@ -611,3 +616,30 @@
          font-size: 16px
          line-height: 20px
          min-height: 48px
+   .modal
+      &__dialog
+         max-width: 280px
+         &-content
+            padding: 33px 20px
+      &__button
+         width: 100%
+         order: 2
+      &__info
+         display: inline-block
+         margin-bottom: 15px
+
+//responsive for small Horizontal device
+@media ( max-height: 487px )
+   .modal
+      &__dialog
+         border-radius: 4px
+         min-height: 0
+         height: 90%
+         overflow-y: auto
+         overscroll-behavior: contain
+         -ms-overflow-style: none
+         scrollbar-width: none
+         &::-webkit-scrollbar
+            display: none
+         &-content
+            min-height: 517px
