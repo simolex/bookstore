@@ -1110,7 +1110,10 @@ body {
 }
 
 .categories__button--disabled {
-  fill: #959EAD;
+  display: none;
+  fill: #e9e9e9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   cursor: default;
 }
 
@@ -2280,6 +2283,12 @@ body {
   }
   .top-card {
     width: calc( 33% - 36px);
+  }
+  .categories__button--prev {
+    left: -13px;
+  }
+  .categories__button--next {
+    right: -13px;
   }
   .stories__main-video {
     max-height: 210px;
