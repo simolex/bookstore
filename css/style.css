@@ -761,6 +761,7 @@ body {
 }
 
 .card__like {
+  cursor: pointer;
   width: 21px;
   height: 21px;
   fill: #959EAD;
@@ -1832,6 +1833,9 @@ body {
   .stories__play-button:hover {
     fill: #1565D8;
     background-color: #fff;
+  }
+  .card__like:hover {
+    fill: #EC1F46;
   }
 }
 
