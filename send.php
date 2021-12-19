@@ -3,8 +3,8 @@
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
-$secret = require('../../.smtp.php');
-//$secret = require('../../../.credital/.smtp.php');
+//$secret = require('../../.smtp.php');
+$secret = require('../../../.credital/.smtp.php');
 
 // Переменные, которые отправляет пользователь
 $type = (isset($_POST['type']) && !empty($_POST['type'])) ? htmlspecialchars($_POST['type']) : ''; 
@@ -14,8 +14,9 @@ $email = (isset($_POST['email']) && !empty($_POST['email'])) ? htmlspecialchars(
 $message = (isset($_POST['message']) && !empty($_POST['message'])) ? htmlspecialchars($_POST['message']) : '';
 //$file = $_FILES['myfile'];
 switch ($type) {
+    case 'order':
     case 'gift':
-        $title = "Заказ подарка Best Tour Plan";
+        $title = "Заказ подарка Ehya Bookstore";
         $body = "
             <h2>Новое обращение:</h2>
             <b>Имя:</b> $name<br>
@@ -77,7 +78,7 @@ try {
     $mail->Password   = $secret['pass']; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom($secret['username'], 'Best Tour'); // Адрес самой почты и имя отправителя
+    $mail->setFrom($secret['username'], 'Ehya Bookstore'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress($secret['post_address']);  
