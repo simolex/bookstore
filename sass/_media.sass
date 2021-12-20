@@ -148,7 +148,6 @@
    .top
       &-card
          width: calc( 50% - 36px )
-
    .stories
       &-wrapper
          padding: 45px 0 38px 0
@@ -220,10 +219,10 @@
             max-width: calc(68% - 20px)
             padding: 0
       &-main
-         grid-template-rows: repeat(3, 120px)
+         grid-template-rows: repeat(4, 120px)
          grid-gap: 0
          &__picture
-            grid-row: span 2
+            grid-row: span 3
          &__info
             padding-top: 20px
             padding-left: 0
@@ -274,6 +273,15 @@
 @media ( max-width: 767px )
    .body
       padding: 67px 0 0
+   .header
+      &--mobile
+         &--fixed
+            position: fixed
+            top: 0
+            left: 0
+            right: 0
+            z-index: 100
+            background-color: rgba(#fff, 0.95) 
    .container
       max-width: 576px
       width: 90%
@@ -286,14 +294,7 @@
       margin-top: 0
       padding: 18px 0
       position: relative
-      background-color: rgba(#fff, 0.95)
-      &--mobile
-         &--fixed
-            position: fixed
-            top: 0
-            left: 0
-            right: 0
-            z-index: 100
+       
       &-menu
          &__item
             margin-right: 0
@@ -495,11 +496,13 @@
          margin-top: 34px
          min-width: 159px
          width: 159px
+         font-size: 14px
+         line-height: 20px
       &-main
-         grid-template-rows: repeat(2, 120px)
+         grid-template-rows: repeat(3, 120px)
          &__picture
             padding: 0 4px
-            grid-row: span 1
+            grid-row: span 2
          &__info
             align-self: stretch
       &-tape
@@ -660,6 +663,12 @@
          display: inline-block
          margin-bottom: 15px
 
+@media ( max-width: 360px  )   
+   .blog
+      &-main
+         grid-template-rows: repeat(2, 120px)
+         &__picture
+            grid-row: span 1
 //responsive for small Horizontal device
 @media ( max-height: 487px )
    .modal

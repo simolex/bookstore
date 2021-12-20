@@ -1627,7 +1627,7 @@ body {
 
 .blog-item__picture {
   max-width: calc(51% - 30px);
-  margin-right: 30px;
+  margin-right: 35px;
 }
 
 .blog-item__info {
@@ -1644,7 +1644,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
-  line-height: 32px;
+  line-height: 31.9px;
 }
 
 .blog__picture {
@@ -2487,12 +2487,12 @@ body {
     padding: 0;
   }
   .blog-main {
-    -ms-grid-rows: (120px)[3];
-        grid-template-rows: repeat(3, 120px);
+    -ms-grid-rows: (120px)[4];
+        grid-template-rows: repeat(4, 120px);
     grid-gap: 0;
   }
   .blog-main__picture {
-    grid-row: span 2;
+    grid-row: span 3;
   }
   .blog-main__info {
     padding-top: 20px;
@@ -2578,6 +2578,14 @@ body {
   .body {
     padding: 67px 0 0;
   }
+  .header--mobile--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
   .container {
     max-width: 576px;
     width: 90%;
@@ -2594,14 +2602,6 @@ body {
     margin-top: 0;
     padding: 18px 0;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.95);
-  }
-  .navbar--mobile--fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
   }
   .navbar-menu__item {
     margin-right: 0;
@@ -2905,14 +2905,16 @@ body {
     margin-top: 34px;
     min-width: 159px;
     width: 159px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .blog-main {
-    -ms-grid-rows: (120px)[2];
-        grid-template-rows: repeat(2, 120px);
+    -ms-grid-rows: (120px)[3];
+        grid-template-rows: repeat(3, 120px);
   }
   .blog-main__picture {
     padding: 0 4px;
-    grid-row: span 1;
+    grid-row: span 2;
   }
   .blog-main__info {
     -ms-flex-item-align: stretch;
@@ -3125,6 +3127,16 @@ body {
   .modal__info {
     display: inline-block;
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .blog-main {
+    -ms-grid-rows: (120px)[2];
+        grid-template-rows: repeat(2, 120px);
+  }
+  .blog-main__picture {
+    grid-row: span 1;
   }
 }
 
