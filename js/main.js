@@ -106,20 +106,22 @@ const mainScript = () => {
   const menu = document.querySelector(".navbar__menu-group");
   const closeBtn = menu.querySelector(".navbar__menu-close");
 
-  const toggleMenu = () => {
-    menu.classList.toggle("navbar__menu-group--hidden");
+  const openMenu = () => {
+    menu.classList.remove("navbar__menu-group--hidden");
+    disableBodyScroll(true);
   };
-  closeBtn.addEventListener("click", () => {
-    toggleMenu();
-  });
+  const closeMenu = () => {
+    menu.classList.add("navbar__menu-group--hidden");
+    enableBodyScroll();
+  };
 
-  buttonBurger.addEventListener("click", () => {
-    toggleMenu();
-  });
+  closeBtn.addEventListener("click", closeMenu);
+
+  buttonBurger.addEventListener("click", openMenu);
 
   menu.addEventListener("click", (event) => {
     if (event.target.classList.contains("navbar-menu__link")) {
-      toggleMenu();
+      closeMenu();
     }
   });
 };

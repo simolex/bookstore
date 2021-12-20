@@ -1,7 +1,12 @@
 const modalForm = () => {
   const modalButtons = document.querySelectorAll("[data-toggle=modal]");
   const closeButtons = document.querySelectorAll(".modal__close");
+  const overlayFields = document.querySelectorAll(".modal__overlay");
   const body = document.querySelector(".body");
+
+  overlayFields.forEach((overlayItem) => {
+    overlayItem.addEventListener("click", (e) => CloseModal(e));
+  });
 
   modalButtons.forEach((itemModal) => {
     itemModal.addEventListener("click", (e) => OpenModal(e));
@@ -11,15 +16,15 @@ const modalForm = () => {
     closeButton.addEventListener("click", (e) => CloseModal(e));
   });
 
-  const setFixerBody = () => {
-    const scrollPosition = -1 * (Math.floor(scrollY / 1) - 63);
-    body.classList.add("body--fixed");
-    body.style.top = scrollPosition + "px";
-  };
-  const deleteFixerBody = () => {
-    scrollY = -1 * body.style.top;
-    body.classList.remove("body--fixed");
-  };
+  // const setFixerBody = () => {
+  //   const scrollPosition = -1 * (Math.floor(scrollY / 1) - 63);
+  //   body.classList.add("body--fixed");
+  //   body.style.top = scrollPosition + "px";
+  // };
+  // const deleteFixerBody = () => {
+  //   scrollY = -1 * body.style.top;
+  //   body.classList.remove("body--fixed");
+  // };
 
   const OpenModal = (event) => {
     const idModal = event.target.dataset.href;

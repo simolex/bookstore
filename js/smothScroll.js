@@ -5,8 +5,8 @@ const smothScroll = () => {
 
   linkArray.forEach((link) => {
     link.addEventListener("click", (event) => {
-      event.preventDefault();
-      //if()
+      enableBodyScroll();
+
       const ID =
         event.target.tagName.toLowerCase() == "a"
           ? event.target.getAttribute("href").substr(1)
