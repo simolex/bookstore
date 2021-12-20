@@ -34,7 +34,7 @@ const modalForm = () => {
     modalContainer.querySelector(".modal__button").innerHTML = textLink;
     modalContainer.querySelector("[name=type]").value = typeForm;
 
-    setFixerBody();
+    disableBodyScroll(true);
   };
 
   const CloseModal = (event) => {
@@ -43,7 +43,7 @@ const modalForm = () => {
     event.preventDefault();
     modalContainer.querySelector(".modal__overlay").classList.remove("modal__overlay--visible");
     modalContainer.querySelector(".modal__dialog").classList.remove("modal__dialog--visible");
-    deleteFixerBody();
+    enableBodyScroll();
   };
 
   const pressEscape = (event) => {
@@ -54,7 +54,7 @@ const modalForm = () => {
         event.preventDefault();
         itemModal.querySelector(".modal__overlay").classList.remove("modal__overlay--visible");
         itemModal.querySelector(".modal__dialog").classList.remove("modal__dialog--visible");
-        deleteFixerBody();
+        enableBodyScroll();
       });
     }
   };
