@@ -1,9 +1,19 @@
 *
   box-sizing: border-box
-body
+.body
   font-family: 'Open Sans', sans-serif
   background: #fff
   color: $text-color
+  &--fixed
+    position: fixed
+    overflow-y: scroll
+    left: 0
+    right: 0
+    top: 0
+    scrollbar-width: none
+    &::-webkit-scrollbar
+      opacity: 0
+
 .container
   max-width: 1140px
   margin: auto

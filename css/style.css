@@ -347,10 +347,23 @@ template {
           box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: 'Open Sans', sans-serif;
   background: #fff;
   color: #183B56;
+}
+
+.body--fixed {
+  position: fixed;
+  overflow-y: scroll;
+  left: 0;
+  right: 0;
+  top: 0;
+  scrollbar-width: none;
+}
+
+.body--fixed::-webkit-scrollbar {
+  opacity: 0;
 }
 
 .container {
