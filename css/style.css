@@ -1465,11 +1465,17 @@ body {
   cursor: pointer;
   -ms-flex-line-pack: center;
       align-content: center;
+  fill: #fff;
 }
 
 .story__flag-icon {
   width: 14px;
   height: 21px;
+  stroke: #1565D8;
+  fill: inherit;
+}
+
+.story__flag--selected {
   fill: #1565D8;
 }
 
@@ -1800,7 +1806,7 @@ body {
 }
 
 .footer {
-  padding: 110px 0 54px;
+  padding: 89px 0 54px;
 }
 
 .footer-wrapper {
@@ -2089,6 +2095,7 @@ body {
   position: fixed;
   right: 15px;
   bottom: 15px;
+  z-index: 20;
 }
 
 .pop-up__arrow {
@@ -2130,6 +2137,9 @@ body {
   .stories__play-button:hover {
     fill: #1565D8;
     background-color: rgba(255, 255, 255, 0.7);
+  }
+  .story__flag:hover {
+    fill: #1565D8;
   }
   .card__like {
     -webkit-transition: 200ms ease all;
@@ -2330,6 +2340,12 @@ body {
   }
   .top-card {
     width: calc( 33% - 36px);
+  }
+  .top-card__title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
   }
   .categories__button--prev {
     left: -13px;
@@ -2709,6 +2725,12 @@ body {
   .top-card {
     width: calc( 100% - 36px);
   }
+  .top-card__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+  }
   .top-card__cover {
     -ms-flex-preferred-size: 23%;
         flex-basis: 23%;
@@ -2867,7 +2889,7 @@ body {
     line-height: 36px;
   }
   .footer {
-    padding-top: 48px;
+    padding-top: 29px;
   }
   .pop-up {
     display: none;
