@@ -6,7 +6,7 @@ $(document).ready(function () {
         this.optional(element) || phone_number.match(/^(\+7\s\(\d{3}\)\s\d{3}\-\d{2}\-\d{2})$/)
       );
     },
-    "Please specify a valid phone number"
+    "Телефон в формате: +7 (xxx) xxx-xx-xx"
   );
 
   $(".form").each(function () {
@@ -28,16 +28,16 @@ $(document).ready(function () {
       errorClass: "invalid__text",
       messages: {
         name: {
-          required: "Please specify your name",
-          minlength: "Please enter at least 2 characters.",
+          required: "Укажите своё имя",
+          minlength: "Должно быть не менее 2 символов",
         },
         phone: {
-          required: "Phone number required",
-          phoneGlo: "Phone number format of +7 (xxx) xxx-xx-xx",
+          required: "Укажите телефон",
+          phoneGlo: "Телефон в формате: +7 (xxx) xxx-xx-xx",
         },
         email: {
-          required: "Email address required",
-          email: "Email address format of name@domain.com",
+          required: "Укажите электронную почту",
+          email: "Почта в формате: name@domain.ru",
         },
       },
       highlight: function (element, errorClass, validClass) {
