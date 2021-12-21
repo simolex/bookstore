@@ -1,14 +1,17 @@
-const enableBodyScroll = () => {
+const enableBodyScroll = (callback) => {
   if (document.readyState === "complete") {
     document.body.style.position = "";
     document.body.style.overflowY = "";
     document.body.style.width = "";
+    document.body.setAttribute("data-scroll-disabled", "false");
 
     if (document.body.style.marginTop) {
       const scrollTop = -parseInt(document.body.style.marginTop, 10);
       document.body.style.marginTop = "";
       window.scrollTo(window.scrollX, scrollTop);
     }
+
+    if (callback !== undefined) callback();
   } else {
     window.addEventListener("load", enableBodyScroll);
   }
@@ -16,6 +19,8 @@ const enableBodyScroll = () => {
 
 const disableBodyScroll = (savePosition = false) => {
   if (document.readyState === "complete") {
+    document.body.setAttribute("data-scroll-disabled", "true");
+
     if (document.body.scrollHeight > window.innerHeight) {
       if (savePosition) document.body.style.marginTop = `-${window.pageYOffset}px`;
       document.body.style.position = "fixed";
@@ -25,4 +30,10 @@ const disableBodyScroll = (savePosition = false) => {
   } else {
     window.addEventListener("load", () => disableBodyScroll(savePosition));
   }
+};
+
+const isDisabledBodyScroll = () => {
+  const state = document.body.getAttribute("data-scroll-disabled");
+  if (!state) return "false";
+  return state;
 };

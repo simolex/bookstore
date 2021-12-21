@@ -6,17 +6,26 @@ const smothScroll = () => {
   linkArray.forEach((link) => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
-      //enableBodyScroll();
+      //;
 
       const ID =
         event.target.tagName.toLowerCase() == "a"
           ? event.target.getAttribute("href").substr(1)
           : event.target.closest("a").getAttribute("href").substr(1);
 
-      document.getElementById(ID).scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      if (isDisabledBodyScroll() === "false") {
+        document.getElementById(ID).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      } else {
+        enableBodyScroll(() => {
+          document.getElementById(ID).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      }
     });
   });
 };
