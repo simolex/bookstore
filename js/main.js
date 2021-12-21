@@ -108,11 +108,11 @@ const mainScript = () => {
 
   const openMenu = () => {
     menu.classList.remove("navbar__menu-group--hidden");
-    disableBodyScroll(true);
+    //disableBodyScroll(true);
   };
   const closeMenu = () => {
     menu.classList.add("navbar__menu-group--hidden");
-    enableBodyScroll();
+    //enableBodyScroll();
   };
 
   closeBtn.addEventListener("click", closeMenu);

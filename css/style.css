@@ -2905,7 +2905,12 @@ template {
     padding-top: 29px;
   }
   .pop-up {
-    display: none;
+    bottom: 30px;
+  }
+  .pop-up__button {
+    width: 36px;
+    height: 36px;
+    min-height: 36px;
   }
 }
 

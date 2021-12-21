@@ -5,7 +5,8 @@ const smothScroll = () => {
 
   linkArray.forEach((link) => {
     link.addEventListener("click", (event) => {
-      enableBodyScroll();
+      event.preventDefault();
+      //enableBodyScroll();
 
       const ID =
         event.target.tagName.toLowerCase() == "a"
