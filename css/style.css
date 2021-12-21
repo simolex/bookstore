@@ -553,6 +553,16 @@ template {
   position: absolute;
 }
 
+.scroll-anchor {
+  position: relative;
+}
+
+.scroll-anchor__offset {
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
 .navbar {
   font-family: 'Open Sans', sans-serif;
   display: -webkit-box;
